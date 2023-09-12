@@ -6,4 +6,4 @@ The exercises from the lab classes can be accessed by [this link](https://fenix.
 
 ## Notes
 
-  The notes are organized in two sections: one for theoritical classes and one for lab classes. The notes from `theoretical classes` can be accessed [here](https://github.com/josedsilva20/Object-oriented-Programming-PO-pt-/tree/main/te%C3%B3ricas), and from the `lab classes` [here](https://github.com/josedsilva20/Object-oriented-Programming-PO-pt-/tree/main/lab).
+  The notes are organized in two sections: one for theoritical classes and one for lab classes. The notes from `theoretical classes` can be accessed [here](https://github.com/josedsilva20/OOP-2023/tree/main/Teo%CC%81ricas), and from the `lab classes` [here](https://github.com/josedsilva20/OOP-2023/tree/main/Laborato%CC%81rios).
