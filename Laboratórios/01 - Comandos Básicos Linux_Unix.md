@@ -87,33 +87,6 @@ Este comando renomeia o ficheiro `ficheiro_origem` para `novo_nome` e remove o `
 > O ***mv***, ***cp*** e ***rm*** são sempre aconselhados a levar o `-i` para evitar erros, pois são *irreversíveis*
 
 
-<!---> 
-	chmod proteção entrada : muda as permissões
-
-		mudar proteção ---> 
-<!---> --- --- ---, configurações binárias 000 000 000 = 000 = --- --- ---
-							rwx --- ---, configurações binárias 111 000 000 = 700 = rwx --- --- | --->
-
-
-
-<!--->rm *.in : executa o comando rm especificando que é diferente daquele que está na alias no rc.
-
-	rm a*.in : remove todos que começam por a e têm outros caracteres
-
-	rm a?.in : remove todos que começam por a e têm mais um caracter
-
-	PATH
-
-		dir1:dir2:dir3
-
-		cada diretório representa um executável.
-
-		quando executamos um programa ele vai procurar recursivamente no path
-
-	Alterar variável de ambiente:
-
---->
-
 
 
 
