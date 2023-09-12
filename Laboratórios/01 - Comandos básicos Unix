@@ -1,0 +1,73 @@
+Comandos básicos Unix
+
+	cd dir ---> troca o diretório
+
+	ls ---> mostra o conteudo do diretório atual
+
+		-l ---> apresenta mais info sobre cada entrada do dir
+
+		-al ---> mostra tudo do -l e também ".", ".." e também os ficheiros ocultos, nome do dono, grupo, tamanho do ficheiro, data da última modificação e mostra as permissões (rwxrwxrwx).
+			o x significa que se for um ficheiro, posso executá-lo e se for um diretório posso entrar nele
+
+	mkdir dir ---> cria um diretório
+
+	rmdir dir ---> remove diretórios vazios
+
+	chmod proteção entrada ---> muda as permissões
+
+		mudar proteção ---> --- --- ---, configurações binárias 000 000 000 = 000 = --- --- ---
+							rwx --- ---, configurações binárias 111 000 000 = 700 = rwx --- ---
+
+	rm ficheiro ---> remove ficheiro (ação irreversível)
+
+	rm -i ficheiro ---> remove ficheiro mas antes pergunta se queremos mesmo remover
+
+	rm -r diretório ---> remove o diretório
+
+	rm * ---> remove tudo
+
+	cp d1/d2/a d3/c ---> copia o ficheiro a e cola no diretório d3 com o nome c
+
+	mv a b ---> copia o a para b e remove o a, ou seja, muda o nome do a para b.
+
+				também serve para mover um ficheiro de um sítio para o outro
+
+					mv a d3/ ---> move o a para o d3/. Se em d3/ houver um a ele remove-o
+
+	mv -i a d3/ ---> move o a para d3/ mas primeiro pergunta
+
+
+
+	DICA:
+
+		o mv, cp e rm são sempre aconselhados a levar o -i para evitar erros, pois são irreversíveis
+
+		para não termos de escrever sempre o -i, metmeos no ficheiro rc: "alias cp="cp -i" "alias rm="rm -i" "
+
+	echo €SHELL ---> permite saber qual é a nossa shell.
+
+	pwd ---> diz-nos o nosso diretório atual
+
+	less ficheiro ---> permite ver o conteúdo do ficheiro no terminal
+
+					   também podemos usar o "cat", mas não é muito prático para ficheiros enormes
+
+	\rm *.in ---> executa o comando rm especificando que é diferente daquele que está na alias no rc.
+
+	rm a*.in ---> remove todos que começam por a e têm outros caracteres
+
+	rm a?.in ---> remove todos que começam por a e têm mais um caracter
+
+	PATH
+
+		dir1:dir2:dir3
+
+		cada diretório representa um executável.
+
+		quando executamos um programa ele vai procurar recursivamente no path
+
+	Alterar variável de ambiente:
+
+
+
+
