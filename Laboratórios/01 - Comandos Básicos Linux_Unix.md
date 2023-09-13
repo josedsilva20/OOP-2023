@@ -1,5 +1,5 @@
 # Comandos básicos Unix
-### Troocar o diretório
+### Trocar o diretório
 ```shell
 	$ cd dir/a/aceder
 ```
