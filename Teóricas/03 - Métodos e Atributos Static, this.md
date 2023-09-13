@@ -31,7 +31,7 @@ Quando acedemos a um atributo de classe o ideal é acedê-lo através da classe 
 
 `Métodos estáticos` são sempre executados no contexto duma classe, acedendo a atributos estáticos dessa classe ou de outras apenas. Não pode ser executado no contexto de objeto, mas sim de classe.
 
-`ex:`
+`ex:`  
 ![](Classecaneta03.png)
 ```java 
 	Caneta c;
