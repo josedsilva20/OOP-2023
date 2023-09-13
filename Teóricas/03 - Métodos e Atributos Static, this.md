@@ -1,7 +1,6 @@
 
-# Proteção/Acesso
 
-## Static
+# Static
 
 Um atributo `static` é um atributo que não é privado para cada objeto, pois está associado à classe e não ao objeto.
 
