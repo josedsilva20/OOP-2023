@@ -17,6 +17,8 @@ public void move(int dx, int dy){
 }
 ```
 
+> Geralmente este tipo de associação é chamada de `relação de tem um`.
+
 ## Fugas de Privacidade
 
 Quando temos um método que retorna um objeto temos uma fuga de privacidade, pois retornamos a referência do mesmo. Exemplo:
@@ -144,8 +146,8 @@ Os nomes devem ter significados e devem ser explicativos e perceptíveis, ou sej
 - Curtos mas com significado
 - Evitar nomes com uma letra, excepto se forem índices utilizados num ciclo com poucas instruções:
 
-    - i, j, k, m, n para inteiros;
-    - c, d, e para caracteres;
+    - ***i, j, k, m, n*** para inteiros;
+    - ***c, d, e*** para caracteres;
 - **Bons exemplos:** *acariciado, gato, meuComprimento*.
 - **Maus exemplos:** *Felix, meu_Comprimento*.
 
