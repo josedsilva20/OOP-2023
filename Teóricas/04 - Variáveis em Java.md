@@ -14,11 +14,11 @@ São atribuídos valores automaticmente pelo java.
 
 ```java
     public class Caneta {
-		private int tinta = 2;
+	    private int tinta = 2;
 	}
 ```
 
-Tambémm pode ser inicializada dentro do construtor:
+Também pode ser inicializada dentro do construtor:
 ```java
     public Caneta(int quantidade, String marca){
         _quantidade = quantidade;
@@ -35,7 +35,7 @@ Tambémm pode ser inicializada dentro do construtor:
 
 A inicialização é feita quando é feita uma abordagem ao código da classe caneta, ou seja a primeira vez em que se faz referência à essa classe.
 
-> Como é ao nível da classe **não faz sentido** ter construtor
+> Como é ao nível da classe **não faz sentido** ter construtor.
 
 ### Constantes
 
@@ -91,7 +91,7 @@ Obrigatoriamente não podem ter os mesmos parâmetros. Exemplo:
 	public int escre(String msg, int n){
         for ( int i = 0; i < n; i++)
 			if (!escreve(msg)) // vai buscar o metodo escreve (msg) e não o escreve (msg, n)
-			return i;
+			    return i;
 
 		return n;
 	}
