@@ -31,7 +31,7 @@ Quando acedemos a um atributo de classe o ideal é acedê-lo através da classe 
 `Métodos estáticos` são sempre executados no contexto duma classe, acedendo a atributos estáticos dessa classe ou de outras apenas. Não pode ser executado no contexto de objeto, mas sim de classe.
 
 `ex:`  
-![](Classecaneta03.png)
+![](images/Classecaneta03.png)
 ```java 
 	Caneta c;
 	int x = Caneta.obtemNCanetas();
@@ -48,11 +48,11 @@ Consideremos o pedaço de código abaixo:
 
 No espaço de endereçamento de memória temos algo parecido com:
 
-![](mem03.png)
+![](images/mem03.png)
 
 > Isso mostra que os atributos estáticos (neste caso o `nCanetas`) não estão atribuídos aos objetos, mas sim às classes.
 
-![](mem3.png)
+![](images/mem3.png)
 
 # This
 
