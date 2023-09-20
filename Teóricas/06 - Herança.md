@@ -155,10 +155,112 @@ public class Dog extends Animal {
         super(name, birthday, owner);
         _vacine = vacine;
     }
+
+    ...
+    
 }
 ```
 
 
+## Invocar metodos da superclasse
+
+Se Dog herdar de Animal e animal tiver um metodo `getAge()` que retorna um inteiro:
+
+```java
+Dog d = new Dog();
+d.getAge();
+```
+	
+
+Se quisermos, podemos substituir o método herdado. Assim se alterarmos o `getAge()` dentro da classe `Dog`, o método invocado será `getAge()` da classe `Dog` e não da `Animal`.
+
+
+Se quisermos executar um método da superclasse mas que já foi alterado na classe derivada devemos usar a palavra reservada `super` imediatamente antes do nome do método.
+
+Exemplo:
+
+
+```java
+public class Animal{
+	public int getAge(){
+		return _age;
+	}
+}
+
+@override
+public class Dog (){
+    public int getAge(){
+        return 7 * super.getAge();
+    }
+
+```
+
+## Substituição 
+
+É um método igual com `mesmos parâmetros` e que fazem `coisas diferentes`. É nestes que usamos a tag `@override` por cima. 
+> *Ver exemplo acima*
+
+
+## Sobreposição
+
+É um método com parâmetros diferentes e funcionalidade também diferente. Exemplo:
+
+```java
+public class Rectangle{
+    private int _length, _width;
+
+    public Rectangle(int l, int w) {
+        _length = l;
+        _width = w;
+    }
+    
+    public void area() {
+        return _length * _width;
+    }
+
+    public void print() {
+        System.out.println(“length : “ + _length);
+        System.out.println(“width : “ + _width);
+    }
+
+    public void setDimension(double l, double w) {
+        _length = (l >= 0) ? l : 0;
+        _width = (w >= 0) ? w : 0;
+    }
+}
+```
+
+```java
+public class Box extends Rectangle {
+    private int _height;
+
+    public Box(int l, int w, int h) {
+        super(l, w);
+        _height = h;
+    }
+
+    public void volume() {
+        // Utiliza o método area() herdado da superclasse
+        return area() * _height;
+    }
+
+    @Override // Faz a substituição do método da superclasse
+    public void print() {
+        super.print();
+        System.out.println(“height: “ + _height);
+    }
+
+
+    // Sobrepõe o método da superclasse
+    public void setDimension(double l, double w, double h) {
+        super.setDimension(l, w);
+        if (h >= 0) _height = h;
+        else _height = 0;
+    }
+}
+```
+
+> ***Supers encadeados não são permitidos em Java.***
 
 
 

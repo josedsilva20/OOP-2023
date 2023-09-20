@@ -1,0 +1,22 @@
+# Compatibilidade de tipos
+
+Só podemos colocar numa varíavel valores compatíveis ao seu tipo.
+
+```java
+long l = ...;
+int i = l;
+```
+
+	imagem do quadro (herança)---
+
+		ao subir não há problema, um cão para Animal não há problema
+
+			upcastng. É segura.
+
+			Dog d; Animal a; a = d; isto é seguro. tudo que podemos invocar sobre A também podemos invocar sobre d
+
+		mas descer dá problema
+
+			downcasting. Dá erro de compilação porque um Animal não pode ser sempre um cão. Se tivermos a certeza que é o que queremos precisamos fazer um cast:
+
+				d = (Dog) a; Se durante a execução do código se for mesmo um cão ele faz, mas se não for dá erro de execução.
