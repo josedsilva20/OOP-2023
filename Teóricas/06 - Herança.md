@@ -131,7 +131,7 @@ A inicialização dos ***atributos do construtor*** da superclasse são iniciali
 
 Para isso usámos a instrução `super()`, que invoca o código do construtor da superclasse e só depois disso é que inicilizá-mos os argumentos da classe derivada.
 
-> A primeira linha de código deve ser a instrução `super()`. Se não fizermos isso, o compilador assume que invocámos o método super() sem argumentos, que é herdado pela classe `Object``.
+> A primeira linha de código deve ser a instrução `super()`. Se não fizermos isso, o compilador assume que invocámos o método super() sem argumentos, que é herdado pela classe `Object`.
 
 ```java
 public class Animal {
