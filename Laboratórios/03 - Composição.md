@@ -35,6 +35,10 @@ public class Numero {
 		return _valor == numero.valor();
 	}
 
+        public void altera(int novoValor){
+            _valor = novoValor;
+        }
+
 	public int valor(){
 		return _valor;
 	}

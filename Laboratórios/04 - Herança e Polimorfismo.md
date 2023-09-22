@@ -28,8 +28,8 @@ public class NumeroComMemoria extends Numero{
 	public NumeroComMemoria(){}
 
 	public void alteraValor(int valor){
-		_anterior = _valor;
-		_valor = valor;
+		_anterior = numero();
+		super.altera(valor);
 	}
 
         public int anterior(){
