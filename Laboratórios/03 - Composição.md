@@ -64,10 +64,13 @@ public class Numero {
 public class Numero {
 	private int _valor;
 	private static final int SIZE = 99;
+
+    // atributo ao nível da classe que guarda todos os numeros criados
 	private static int[] _valores = new int[SIZE];
 
 	public Numero(int valor){
 
+        // verifica se o numero que queremos criar já existe
 		for (int i = 0; i < SIZE; i++){
 			if (valor == _valores[i])
 				return;
