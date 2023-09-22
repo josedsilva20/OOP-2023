@@ -32,6 +32,10 @@ public class NumeroComMemoria extends Numero{
 		_valor = valor;
 	}
 
+    public int anterior(){
+        return anterior;
+    }
+
 	public void desfazer(){
 		int state;
 		state = _anterior;
