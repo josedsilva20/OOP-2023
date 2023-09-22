@@ -57,6 +57,9 @@ public class Numero {
 ## Exercício 2
 
 > Altere o exercício anterior por forma a garantir que cada um dos números inteiros entre 0 e 99 será sempre representado pela mesma instância de Numero. Ou seja, quer-se uma solução que garanta que não é possível ter duas instâncias distintas de Numero a representar o número 5 (por exemplo).
+
+### Implementação do Problema em Java
+
 ```java
 public class Numero {
 	private int _valor;
