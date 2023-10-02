@@ -236,7 +236,7 @@ public class Estojo{
 
 }
 ```
-
+___ 
 ## Exercício 3
 
 Um navio tem tripulantes. Cada tripulante tem um nome, um ano de nascimento e um salário. Cada tripulante tem um identificador único no contexto do navio atribuído automaticamente pela aplicação. O navio tem que suportar a seguinte funcionalidade:
